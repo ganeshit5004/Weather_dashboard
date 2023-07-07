@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(151, 151, 255);
+    overflow: hidden;
+}
+
+.container-1{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 50px;
+    background-image: url('climate.jpg!d');
+    background-position: left;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+.container-1 .slide-1
+{  
+    height: 100%;
+    width: 25%;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 50px 0 0 50px;
+}
+.container-1 .slide-1 .icon-1
+{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 5%;
+   font-size: 10px;
+}
+.container-1 .slide-1 .icon-1 div span ,.container .slide-1 .para span
+{
+    position: relative;
+    top: 8px;
+}
+
+.container-1 .slide-1 .para
+{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.container-1 .slide-1 .para table
+{
+    width: 100%;
+}
+.container-1 .slide-1 .para table tr td 
+{
+    padding: 1%;
+}
+.container-1 .slide-1 .para table tr td span
+{
+    font-size: 15px;
+}
+.container-1 .slide-1 .temp
+{
+    margin-top: 7%;
+}
+.container-1 .slide-1 .temp p
+{
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+.container-1 .slide-1 .temp button
+{
+    height: 30px;
+    width: 30px;
+    top:40px;
+}
+.container-1 .slide-1 .temp  .weather
+{
+    text-align: center;
+    font-size: medium;
+    margin-top: 0;
+}
+.container-1 .slide-1 .temp  .weather span{
+    position: relative;
+   top:2px;
+   left: 2px;
+    padding-left: 1%;
+    font-size: 15px;
+
+}
+.container-1 .slide-2{
+    height: 100%;
+    width: 75%;
+    background-color: rgb(204, 221, 255);
+    border-radius: 50px 50px 50px 50px;
+}
+.container-1 .slide-2 div
+{
+    margin: 2%;
+}
+.container-1 .slide-2 .sub-1 {
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+.container-1 .slide-2 .sub-1 .content
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.container-1 .slide-2 .sub-1 .content div
+{
+    
+    position: relative;
+    top: -20px;
+    justify-content: space-between;
+}
+.container-1 .slide-2 .sub-1 .content span
+{
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+.container-1 .slide-2 .sub-1 .content div img
+{
+    border-radius: 50%;
+}
+#chart {
+    width: 95%;
+    height: 5%;
+    background-color:aliceblue ;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    top:-30px;
+    
+  }
+
+
+.container-1 .slide-2 .sub-2
+{
+    position: relative;
+    top: -30px;
+}
+.container-1 .slide-2 .sub-2 .content
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+    margin-top: 20px;
+  }
+
+.sub-2 .card-container .card {
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+   
+ }
+  .card:hover {
+    background-color: lightblue;
+  }
+  
+  .sub-2 .card-container .card .topic
+  {
+    display: flex;
+    justify-content:space-between ;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-2 .card-container .card .topic span
+  {
+    font-size: 15px;
+    background-color: rgb(57, 57, 175);
+    color: white;
+    position: relative;
+    right: 10px;
+    
+  }
+  .sub-2 .card-container .card div
+  {
+    margin: 0%;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .sub-2 .card-container .card .level
+  {
+    font-size: 10px;
+  }
+  .sub-2 .card-container .card .level ul
+  {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: -25px;
+    color: rgb(123, 137, 148);
+  }
+  .sub-2 .card-container .card .value
+  {
+    text-align: center;
+  }
+  .sub-2 .card-container .card  span .progress{
+    position: relative;
+    top: -20px;
+    height: 10px;
+    background-color:transparent;
+
+  }
+
+  .sub-2 .card-container .card  span .progress .progress-bar
+  {
+    border-radius: 3px;
+  }
+  .sub-2 .card-container .card  span .progress .empty
+  {
+    background-color:  rgb(123, 137, 148);
+  }
+  .sub-2 .card-container .card .level ul li
+  {
+    margin-right: 5px;
+    margin-left: 3px;
+  }
+  .gauge{
+    position: relative;
+    margin: 4px;
+    float:left;
+    left: 40px;
+    top:-40px
+  }
+  .gauge span
+  {
+    position: relative;
+    left: 30px;
+    top:-20px;
+  }
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow:hidden ;/* Comment this line to understand the trick */
+    width: 100%; height: 45px; 
+    /* Half circle (overflow) */
+    /* bring the numbers up */
+  }
+  .barchart{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 8px solid #0bf;     /* half gray, */
+    border-bottom-color:  rgb(123, 137, 148);  /* half azure */
+    border-right-color:  rgb(123, 137, 148);
+  }
+
+  .sub-2 .card-container .km .level ul li:first-child
+  {
+    position: relative;
+    top:40px;
+    left: 30px;
+  } 
+  .sub-2 .card-container .km .level ul li:nth-child(2)
+  {
+    position: relative;
+    top:10px;
+    left: 7px;
+   
+  } 
+  .sub-2 .card-container .km .level ul li:nth-child(3)
+  {
+    position: relative;
+    bottom: 5px;
+    left: 8px;
+    
+  } 
+  .sub-2 .card-container .km .level ul li:nth-child(4)
+  {
+    position: relative;
+    left: 7px;
+    
+  } 
+  .sub-2 .card-container .km .level ul li:nth-child(5)
+  {
+    position: relative;
+    top: 40px;
+    left: -07px;
+    
+  } 
+  .sub-2 .card-container .card .triangle-left {
+    width:0;
+    height:0;
+    border-top: 5px solid transparent;
+    border-right: 25px solid #0bf;
+    border-bottom: 5px solid transparent;
+    transform:rotate(153deg);
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+    
+  }

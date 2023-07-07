@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEATHER DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body style="background-color: rgb(151, 151, 255);">
+    <div class="container-1">
+        <div class="slide-1">
+            <div class="icon-1">
+                <div>
+                    <span class="material-symbols-outlined">
+                        add_box
+                        </span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        steppers
+                        </span>
+                </div>
+                <div>
+                    °C &nbsp;&nbsp;<span class="material-symbols-outlined">
+                        toggle_off
+                        </span>&nbsp;&nbsp; °F
+                </div>
+            </div>
+            <div class="para"><table>
+                <tr>
+                    <td><span class="material-symbols-outlined" >
+                        near_me
+                        </span><b>NEW YORK, USA</b></td>
+                    <td>
+                        <span class="material-symbols-outlined">
+                            sunny_snowing
+                            </span> 07:19
+                    </td>
+                </tr>
+                <tr>
+                    <td>Today 28 Sept</td>
+                    <td><span class="material-symbols-outlined">
+                        sunny_snowing
+                        </span>19:32</td>
+                </tr>
+            </table>
+            </div>
+            <div class="temp">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p>10°</p>
+                        <div class="weather"><span class="material-symbols-outlined">
+                            light_mode
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;Normal</div>
+                      </div>
+                      <div class="carousel-item">
+                        <p>27°</p>
+                        <div class="weather"><span class="material-symbols-outlined">
+                            sunny
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;Sunny</div>
+                      </div>
+                      <div class="carousel-item">
+                        <p>40°</p>
+                        <div class="weather"><span class="material-symbols-outlined">
+                            routine
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;Hot</div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            </div>
+            
+        </div>
+        <div class="slide-2">
+            <div class='sub-1'>
+                <div class="content">
+                    <p><b>Welcome back Isabella!</b><br>check out today's weather informatiom</p>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            more_horiz
+                            </span>
+                        <img src="profile.jpg" alt="" width="30px" height="30px">
+                    </div>
+                </div>
+                <div id="chart">
+                  
+              </div>
+            <div class="sub-2">
+              <div class="content"><b>More details of today's weather </b></div>
+              <div class="card-container">
+                  <div class="card"><div class="topic"><div>Humidity</div><div><span class="material-symbols-outlined">
+                    humidity_high
+                    </span></div></div><div class="value"><b>82%</b><span style="font-size: 10px;">bad</span></div><div class="level"><ul><li>good</li>
+                    <li>medium</li>
+                    <li>bad</li></ul></div>
+                    <span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </span>
+                    
+                  <div class="card km"><div class="topic"><div>windy</div><div><span class="material-symbols-outlined">
+                    air
+                    </span></div> 
+                    </div>
+                    <div class="level">
+                      <ul>
+                        <li>0</li>
+                        <li>25</li>
+                        <li>50</li>
+                        <li>75</li>
+                        <li>100</li>
+                      </ul>
+                    </div>
+                    <div class="gauge">
+                      <div class="barOverflow">
+                        <div class="barchart"></div>
+                      </div>
+                      <div class="triangle-left"></div>
+                      <span class="per"><b>80km/h</b></span>
+                    </div>
+                    
+                  
+                    
+                  </div>
+                  <div class="card">
+                    <div class="topic"><div>Precipitation</div><div>
+                      <span class="material-symbols-outlined">
+                         weather_mix
+                      </span></div> </div>
+                      <div class="value"><b>1.4 cm</b></div>
+                      <div class="level">
+                        <ul><li>0</li>
+                          <li>10</li>
+                          <li>20</li>
+                          <li>30</li>
+                          <li>40</li>
+                          <li>50</li>
+                          <li>60</li>
+                          <li>70</li>
+                          <li>80</li>
+                          <li>90</li>
+                        </ul>
+                    </div>
+                    <span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar" role="progressbar" style="width: 7%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 7%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                    </div>
+                   </span>
+                  </div>
+
+            </div>
+              <div class="card-container">
+                <div class="card"><div class="topic"><div>UV index</div><div>
+                  <span class="material-symbols-outlined">
+                     wb_sunny
+                  </span></div> </div>
+                  <div class="value"><b>5 </b><span style="font-size: 10px;">medium</span></div>
+                  <div class="level">
+                    <ul>
+                      <li>0-2</li>
+                      <li>3-5</li>
+                      <li>6-7</li>
+                      <li>8-10</li>
+                      <li>11+</li>
+                    </ul>
+                  </div>
+                  <span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar" role="progressbar" style="width: 15%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar progress-bar" role="progressbar" style="width: 15%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 15%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 15%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                      <div class="progress-bar empty" role="progressbar" style="width: 15%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" ></div>
+                    </div>
+                   </span>
+
+                </div>
+                <div class="card"><div class="topic"><div>Feels like</div><div>
+                  <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span></div> </div>
+                  <div class="value"><b>30°</b></div>
+                  <div class="level">
+                    <ul>
+                      <li>0°</li>
+                      <li>25°</li>
+                      <li>50°</li>
+                    </ul>
+                  </div>
+                  <span>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                    </div>
+
+                  </span>
+                  
+                </div>
+                <div class="card">
+                  <div class="topic"><div>Chance of rain</div><div>
+                    <span class="material-symbols-outlined">
+                      rainy_heavy
+                      </span></div></div>
+                    <div class="value"><b>42%</b></div>
+                    <div class="level">
+                      <ul><li>0%</li>
+                      <li>25%</li>
+                      <li>50%</li>
+                      <li>75%</li>
+                      <li>100%</li></ul>
+                    </div>
+                    <span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                      </div>
+  
+                    </span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="main.js"></script>
+    </div> 
+ </body>
+</html>
